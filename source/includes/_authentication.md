@@ -10,7 +10,7 @@
   + `iss` - идентификатор сервиса выпустившего токен. Должно содержать значение `https://moysklad.ru`
 + Подпись выполняется приватным ключом отправителя по алгоритму `RS256`.
 + Публичный ключ для проверки подписи необходимо получать из JWKS по следующему
-  URL: [https://pay-qr.lognex.ru/.well-known/jwks.json](https://pay-qr.lognex.ru/.well-known/jwks.json)
+  URL: [https://pay-qr.moysklad.ru/.well-known/jwks.json](https://pay-qr.moysklad.ru/.well-known/jwks.json)
 + При обработке запроса сервер должен:
   + Получить актуальный набор ключей из JWKS.
   + Найти в ответе ключ соответствующий полю `kid` в заголовке токена.
